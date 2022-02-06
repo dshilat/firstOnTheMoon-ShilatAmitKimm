@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ראשון על הירח</title>
+    <meta name="description" content="First On The Moon" />
+    <meta name="keywords" content="משחק, חלל, חייזר,למידה" />
+    <meta name="author" content="עמית בריל, שילת דיאמנט וקים קפטס" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+    <!--website fabicon-->
+    <link rel="shortcut icon" href="images/miniLogo.png">
+
+    
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html">
+                <!--הלוגו של המשחק שלכם-->
+                <img id="logo" src="images/logo00-08.png" />
+                <p>ראשון על הירח</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a id="aboutX"class="closeAbout">X</a>
+            <h1>ראשון על הירח</h1>
+            <p>
+                <span class="boldText">אפיון ופיתוח:</span> <br /> 
+                עמית בריל, שילת דיאמנט וקים קפטס
+            </p>
+            <p>
+                <span class="boldText"> אופיין ופותח במסגרת הקורסים:</span> <br />
+                סביבות לימוד אינטראקטיביות 1 (13124) & תכנות אינטראקציה ואנימציה 1 (13130) <br />
+                תשפ"ב
+            </p>
+            <a id="HitLogo" href="https://www.hit.ac.il/" target="_blank">
+                <img  src="images/logo HIT-01.png" />
+            </a>
+            <p class="boldText">הפקולטה לטכנולוגיות למידה</p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+
+            <a id="howToX"class="closeHowToPlay">X</a>
+            <h1>איך משחקים?</h1>
+            <!--<p>כאן יכנסו התמונות/הסרטון המסביר כיצד לשחק</p>-->
+            <ul>
+                <li class="instructionsList">
+                    עזרו לחייזר לאסוף אבנים לבניית הבית שלו, באמצעות בחירת תשובה נכונה לשאלה המוצגת.
+                </li>
+                <li class="instructionsList">
+                    בחרו את התשובה הנכונה בלחיצה עליה, ולאחר מכן לחצו על כתפור הבדיקה.
+                </li>
+                <li class="instructionsList">
+                    שימו לב שכל שאלה מוגבלת בזמן - 40 שניות. 
+                </li>
+                <li class="instructionsList">
+                    בשאלות בהן מופיעות תמונות, תוכלו להגדיל אותן באמצעות מעבר עכבר עליהן.
+                </li>
+                <li class="instructionsList">
+                    ניתן להשתיק את המוזיקה והצלילים באמצעות כפתור ההשתקה. 
+                </li>
+                <li class="instructionsList">
+                    ניתן להשהות את המשחק ולחזור לאותה הנקודה באמצעות כפתור ההשהייה.
+                </li>
+
+            </ul>
+            <p class="boldText">בהצלחה!</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+
+            <!--<iframe src="https://adiyairful.github.io/Infographic-Ezor/Infographic-Final.html" frameborder="0" allowfullscreen=""></iframe>--> <!--רמה 3-->
+
+            <iframe id="gameIframe" src="https://dshilat.github.io/firstOnTheMoon_ShilatKimAmit/firstOnTheMoon" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
